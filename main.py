@@ -134,7 +134,7 @@ def parse_page(url):
 
 def get_geolocation(address):
 
-    google_maps = GoogleMaps(api_key='AIzaSyB53uoVmmuHkn3wvs3n-MaEZReKVCUqwlo')
+    google_maps = GoogleMaps(api_key='your_geocoding_api_key')
     location = google_maps.search(location=address)
     my_location = location.first()
 
